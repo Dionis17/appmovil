@@ -1,0 +1,61 @@
+/* Estilo general */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(135deg, #012169, #d21034); /* Azul y rojo dominicano */
+    background-size: 200% 200%;
+    animation: gradientBackground 6s ease infinite;
+    padding: 20px;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilo de las tarjetas */
+ion-card {
+    background: rgba(255, 255, 255, 0.95); /* Blanco con leve transparencia */
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+ion-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos en las tarjetas */
+.card-icon {
+    font-size: 40px;
+    color: #012169; /* Azul oscuro */
+    margin-bottom: 10px;
+}
+
+/* Título dentro de cada tarjeta */
+ion-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d21034; /* Rojo dominicano */
+}
+
+/* Estilo de la barra superior */
+ion-toolbar {
+    --background: #012169; /* Azul bandera */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+    ion-card {
+        margin: 10px 0;
+    }
+}
