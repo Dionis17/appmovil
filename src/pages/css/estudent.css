@@ -1,0 +1,29 @@
+ion-grid {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .header-row {
+    font-weight: bold;
+    background-color: #f4f4f4;
+    color: #003366;
+  }
+  
+  ion-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ion-col {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  ion-button {
+    margin: 0 5px;
+  }
+  
+  ion-toolbar {
+    --background: #003366; /* Azul Marino */
+    --color: #FFD700; /* Amarillo Sol */
+  }
+  

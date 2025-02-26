@@ -1,0 +1,73 @@
+/* Card Styles */
+.notification-card {
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .notification-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .notification-content {
+    flex: 1;
+  }
+  
+  .notification-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .notification-message {
+    font-size: 1rem;
+    color: #666;
+    margin: 8px 0;
+  }
+  
+  .notification-time {
+    font-size: 0.875rem;
+    color: #aaa;
+  }
+  
+  .notification-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Notification Types */
+  .text-blue-500 {
+    color: #3b82f6;
+  }
+  
+  .text-yellow-500 {
+    color: #f59e0b;
+  }
+  
+  .text-green-500 {
+    color: #10b981;
+  }
+  
+  /* Additional Styles for layout */
+  .space-y-4 > * + * {
+    margin-top: 16px;
+  }
+  
+  .p-4 {
+    padding: 16px;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  .ClassNoti{
+padding: 20px;
+text-align: center;
+color: white;
+background-color: #245fc4;
+
+  }

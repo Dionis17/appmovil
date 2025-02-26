@@ -1,0 +1,86 @@
+.summary-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Blanco con leve transparencia */
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #012169; /* Azul Marino */
+  max-width: 600px;
+  width: 100%;
+}
+
+.small-title {
+  font-size: 1.8em; /* Tamaño de fuente reducido */
+  margin: 0;
+  color: #012169;
+}
+
+
+.summary-card p {
+  font-size: 1em; /* Tamaño de fuente reducido */
+  margin: 0;
+  color: #2E8B57; /* Verde Esmeralda */
+}
+
+.attendance-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF; /* Blanco */
+  transition: transform 0.3s ease;
+}
+
+.attendance-item:hover {
+  transform: scale(1.02);
+}
+
+.attendance-item h2 {
+  font-size: 1.2em;
+  color: #012169; /* Azul Marino */
+}
+
+.attendance-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #2E8B57; /* Verde Esmeralda */
+}
+
+.attendance-item.presente {
+  background-color: #d4edda; /* Verde claro */
+  border-left: 5px solid #A9DFBF; /* Verde suave */
+}
+
+.attendance-item.ausente {
+  background-color: #f8d7da; /* Rojo claro */
+  border-left: 5px solid #F1948A; /* Rojo suave */
+}
+
+ion-toolbar {
+  --background: #012169; /* Azul bandera */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+ion-button {
+  margin: 0 5px;
+  --background: #77AADD; /* Azul suave */
+}
+
+ion-button[color="primary"] {
+  --background: #A4DEAD; /* Verde suave */
+}
+
+ion-button[color="medium"] {
+  --background: #D3D3D3; /* Gris suave */
+}
+
+ion-button[color="tertiary"] {
+  --background: #FFB74D; /* Naranja suave */
+}

@@ -1,33 +1,33 @@
-/* Fondo con colores de la bandera dominicana */
 ion-content {
-    height: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #012169, #d21034); /* Azul y rojo bandera */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    background: linear-gradient(135deg, #012169, #d21034); 
     background-size: 200% 200%;
     animation: gradientBackground 6s ease infinite;
+
+    display: flex; /* Alineación flexible */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
 }
 
-/* Animación del fondo */
+
+
 @keyframes gradientBackground {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Contenedor del login */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    position: absolute;
-    top: 0;
+    height: auto; /* Ajuste basado en el contenido */
     width: 100%;
 }
 
-/* Tarjeta del login con esquina azul */
+
 .login-card {
-    background: rgba(255, 255, 255, 0.95); /* Blanco con transparencia */
+    background: rgba(255, 255, 255, 0.95); 
     backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 20px;
@@ -36,10 +36,9 @@ ion-content {
     max-width: 350px;
     width: 90%;
     position: relative;
-    overflow: hidden; /* Para que el pseudo-elemento no sobresalga */
+    overflow: hidden; 
 }
 
-/* Esquina superior derecha azul */
 .login-card::before {
     content: "";
     position: absolute;
@@ -51,7 +50,6 @@ ion-content {
     clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
 
-/* Títulos */
 h2 {
     color: #012169; /* Azul bandera */
     font-size: 24px;

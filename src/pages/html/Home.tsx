@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonPage, IonContent, IonHeader, IonToolbar, IonTitle, IonGrid, IonRow, IonCol, IonCard, IonCardHeader, IonCardTitle, IonIcon } from '@ionic/react';
 import { personCircleOutline, bookOutline, peopleOutline, chatbubbleEllipsesOutline, calendarOutline, notificationsOutline } from 'ionicons/icons';
-import './Home.css';
+import '../css/Home.css';
 
 const Home: React.FC = () => {
   return (

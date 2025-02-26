@@ -1,18 +1,24 @@
 import React from 'react';
-import { IonPage, IonContent, IonButton } from '@ionic/react';
-import './login.css';
+import { IonPage, IonContent, IonButton, IonCard } from '@ionic/react';
+import '../css/login.css';
 
 const Login: React.FC = () => {
   return (
-    <IonPage className="body">
+    <IonPage>
       <IonContent className="login-container">
         <div className="login-card">
           <h2>Bienvenido</h2>
-          <p className="subtitle">Esta es una plataforma enfocada para el seguimiendo de los estudiantes.</p>
+          <p className="subtitle">Esta es una plataforma enfocada para el seguimiento de los estudiantes.</p>
 
           <div className="button-group">
-            <IonButton expand="full" fill="clear" className="login-btn">Iniciar sesión</IonButton>
-            <IonButton expand="full" fill="clear" className="signin-btn">Registrarse</IonButton>
+            <IonCard routerLink="/iniciar">
+              <IonButton expand="full" fill="clear" className="login-btn" routerLink="/notificaciones">
+                Iniciar sesión
+              </IonButton>
+            </IonCard>
+            <IonButton expand="full" fill="clear" className="signin-btn">
+              Registrarse
+            </IonButton>
           </div>
 
           <p className="social-text">O ingresa con</p>

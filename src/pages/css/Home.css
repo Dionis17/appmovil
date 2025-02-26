@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: linear-gradient(135deg, #012169, #d21034); /* Azul y rojo dominicano */
+    background: linear-gradient(135deg, #245fc4 , #d21034); /* Azul y rojo dominicano */
     background-size: 200% 200%;
     animation: gradientBackground 6s ease infinite;
     padding: 20px;
@@ -47,7 +47,7 @@ ion-card-title {
 
 /* Estilo de la barra superior */
 ion-toolbar {
-    --background: #012169; /* Azul bandera */
+    --background: #245fc4; /* Azul bandera */
     color: white;
     text-align: center;
     font-weight: bold;

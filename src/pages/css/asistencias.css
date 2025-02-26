@@ -1,0 +1,139 @@
+.asistencia-maestros-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #245fc4, #FFC107); /* Azul institucional y amarillo dominicano */
+  background-size: 200% 200%;
+  animation: gradientBackground 6s ease infinite;
+  padding: 20px;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Blanco con leve transparencia */
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #003ca3; /* Azul institucional */
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #F8F8F8; /* Blanco suave */
+}
+
+.student-item ion-label {
+  color: #003ca3; /* Azul institucional */
+}
+
+.actions ion-button {
+  --border-radius: 10px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --transition: background-color 0.3s ease;
+}
+
+/* Botones según acción */
+
+.actions ion-button.presente {
+  --background: #4aa45f; /* Verde brillante para "Presente" */
+  --color: white;
+}
+
+.actions ion-button.presente:hover {
+  --background: #218838; /* Verde más oscuro al pasar el ratón */
+}
+
+.actions ion-button.ausente {
+  --background: #dc3545; /* Rojo claro para "Ausente" */
+  --color: white;
+}
+
+.actions ion-button.ausente:hover {
+  --background: #c82333; /* Rojo más intenso al pasar el ratón */
+}
+
+.actions ion-button.guardar {
+  --background: #007bff; /* Azul suave para "Guardar" */
+  --color: white;
+}
+
+.actions ion-button.guardar:hover {
+  --background: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+.actions ion-button.cancelar {
+  --background: #6c757d; /* Gris neutral para "Cancelar" */
+  --color: white;
+}
+
+.actions ion-button.cancelar:hover {
+  --background: #5a6268; /* Gris más oscuro al pasar el ratón */
+}
+
+.actions ion-button.ver {
+  --background: #fd7e14; /* Naranja brillante para "Ver Asistencia" */
+  --color: white;
+}
+
+.actions ion-button.ver:hover {
+  --background: #e76a1c; /* Naranja más oscuro al pasar el ratón */
+}
+
+.info-card h2, .info-card p {
+  margin: 0;
+}
+
+ion-toolbar {
+  --background: #245fc4; /* Azul institucional */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+ion-button {
+  margin: 0 5px;
+  --border-radius: 12px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  --box-shadow: 0 4px 8px rgba(59, 43, 173, 0.34);
+}
+
+ion-button[color="primary"] {
+  --background: #007bff; /* Azul suave */
+}
+
+ion-button[color="medium"] {
+  --background: #d6d6d6; /* Gris suave */
+  --color: #003ca3;
+}
+
+ion-button[color="tertiary"] {
+  --background: #fd7e14; /* Naranja cálido */
+}
+
+@media (max-width: 768px) {
+  ion-card {
+      margin: 10px 0;
+  }
+}

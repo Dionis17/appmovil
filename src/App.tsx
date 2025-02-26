@@ -1,8 +1,13 @@
+import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/login'; // Asegúrate de que el nombre de la ruta esté bien
-
+import Home from './pages/html/login';
+// Importacion de la pantalla de correctamente
+import Eventos from './pages/html/eventos'; 
+import Mensajeria from './pages/html/mensajeria'; 
+import Asistencias from './pages/html/asistencia'; 
+import Notificaciones from './pages/html/notificaciones'; 
+import Iniciar from './pages/html/Home';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -33,6 +38,21 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/login">
           <Home />
+        </Route>
+        <Route exact path="/eventos">
+          <Eventos />
+        </Route>
+        <Route exact path="/mensajes">
+          <Mensajeria />
+        </Route>
+        <Route exact path="/asistencia">
+          <Asistencias />
+        </Route>
+        <Route exact path="/notificaciones">
+          <Notificaciones />
+        </Route>
+        <Route exact path="/iniciar">
+          <Iniciar />
         </Route>
         <Route exact path="/">
           <Redirect to="/login" /> {/* Cambié /home a /login */}

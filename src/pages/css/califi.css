@@ -1,0 +1,86 @@
+.grade-form-container {
+  padding: 24px;
+  background-color: #f2f7fa;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 30px;
+  background-image: url('https://www.example.com/education-themed-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.form-title {
+  background-color: #245fc4;
+ 
+  padding: 20px;
+  height: 70px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #ffffff; /* Verde cálido, representando frescura y naturaleza */
+  font-family: 'Poppins', sans-serif;
+}
+
+.styled-item {
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 16px;
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.styled-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #006747;
+  font-family: 'Poppins', sans-serif;
+}
+
+.styled-select, .styled-input, .styled-textarea {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 16px;
+  font-size: 16px;
+  color: #333;
+  
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.styled-input::placeholder, .styled-textarea::placeholder {
+  color: #7a869a;
+}
+
+.styled-input:focus, .styled-textarea:focus {
+  background-color: #f4faff;
+  box-shadow: 0 0 10px rgba(0, 101, 71, 0.3); /* Verde suave */
+}
+
+.styled-textarea {
+  height: 120px;
+}
+
+.submit-button {
+ /* Verde profundo */
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 24px;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+ /* Color más oscuro */
+  transform: scale(1.06);
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+

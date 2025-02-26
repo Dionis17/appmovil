@@ -1,0 +1,35 @@
+.event-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  ion-card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  ion-card:hover {
+    transform: scale(1.02);
+  }
+  
+  ion-card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+.encabesado{
+   background-color: #245fc4;
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+  
+.ver{
+  height: 20px;
+  padding: 20px;
+  border: 15px;
+  display: block;
+}

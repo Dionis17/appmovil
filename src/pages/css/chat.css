@@ -1,0 +1,35 @@
+/* Estilos para la página Chat */
+ion-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  ion-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  ion-input {
+    margin: 16px;
+
+  }
+  .input-container{
+    padding: 16px;
+  }
+  
+  .button-container {
+    padding: px;
+  }
+  
+  ion-button {
+    margin: 16px;
+  }
+  .labelChat {
+ background-color: #245fc4;
+ color: white;
+ text-align: center;
+ padding: 20px;
+  }
